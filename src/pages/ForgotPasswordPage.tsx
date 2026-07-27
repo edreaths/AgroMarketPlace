@@ -1,14 +1,14 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import LoginForm from "@/components/auth/LoginForm";
+import ForgotPasswordForm from "@/components/auth/ForgotPasswordForm";
 
-export default function LoginPage() {
+export default function ForgotPasswordPage() {
   return (
     <>
       <Navbar />
 
       <main className="mx-auto flex min-h-[70vh] max-w-md items-center px-6 py-12">
-        <LoginForm />
+        <ForgotPasswordForm />
       </main>
 
       <Footer />

@@ -4,11 +4,16 @@ import ProductDetailsPage from "@/pages/ProductDetailsPage";
 import CartPage from "@/pages/CartPage";
 import CheckoutPage from "@/pages/CheckoutPage";
 import OrderSuccessPage from "@/pages/OrderSuccessPage";
+import DashboardPage from "@/pages/DashboardPage";
+import ProfilePage from "@/pages/ProfilePage";
 
 import HomePage from "@/pages/HomePage";
 import MarketplacePage from "@/pages/MarketplacePage";
 import LoginPage from "@/pages/LoginPage";
 import RegisterPage from "@/pages/RegisterPage";
+import ForgotPasswordPage from "@/pages/ForgotPasswordPage";
+import ResetPasswordPage from "@/pages/ResetPasswordPage";
+import VerifyEmailPage from "@/pages/VerifyEmailPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 function AppRouter() {
@@ -24,6 +29,25 @@ function AppRouter() {
         <Route path="/cart" element={<CartPage />}/>
         <Route path="/checkout" element={<CheckoutPage />}/>
         <Route path="/order-success" element={<OrderSuccessPage />}/>
+          <Route
+  path="/forgot-password"
+  element={<ForgotPasswordPage />}
+/>
+<Route
+  path="/reset-password"
+  element={<ResetPasswordPage />}
+/><Route
+  path="/verify-email"
+  element={<VerifyEmailPage />}
+/>
+<Route
+  path="/dashboard"
+  element={<DashboardPage />}
+/>
+<Route
+  path="/profile"
+  element={<ProfilePage />}
+/>
       </Routes>
     </BrowserRouter>
   );

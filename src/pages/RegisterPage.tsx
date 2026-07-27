@@ -1,9 +1,17 @@
-function RegisterPage() {
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import RegisterForm from "@/components/auth/RegisterForm";
+
+export default function RegisterPage() {
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold">Register</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <main className="mx-auto flex min-h-[70vh] max-w-md items-center px-6 py-12">
+        <RegisterForm />
+      </main>
+
+      <Footer />
+    </>
   );
 }
-
-export default RegisterPage;
