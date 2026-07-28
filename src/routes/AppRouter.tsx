@@ -8,6 +8,7 @@ import DashboardPage from "@/pages/DashboardPage";
 import ProfilePage from "@/pages/ProfilePage";
 import OrdersPage from "@/pages/OrdersPage";
 import OrderDetailsPage from "@/pages/OrderDetailsPage";
+import WishlistPage from "@/pages/WishlistPage";
 
 import HomePage from "@/pages/HomePage";
 import MarketplacePage from "@/pages/MarketplacePage";
@@ -57,6 +58,10 @@ function AppRouter() {
 <Route
   path="/orders/:id"
   element={<OrderDetailsPage />}
+/>
+<Route
+  path="/wishlist"
+  element={<WishlistPage />}
 />
       </Routes>
     </BrowserRouter>
