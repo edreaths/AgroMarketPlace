@@ -6,6 +6,8 @@ import CheckoutPage from "@/pages/CheckoutPage";
 import OrderSuccessPage from "@/pages/OrderSuccessPage";
 import DashboardPage from "@/pages/DashboardPage";
 import ProfilePage from "@/pages/ProfilePage";
+import OrdersPage from "@/pages/OrdersPage";
+import OrderDetailsPage from "@/pages/OrderDetailsPage";
 
 import HomePage from "@/pages/HomePage";
 import MarketplacePage from "@/pages/MarketplacePage";
@@ -47,6 +49,14 @@ function AppRouter() {
 <Route
   path="/profile"
   element={<ProfilePage />}
+/>
+<Route
+  path="/orders"
+  element={<OrdersPage />}
+/>
+<Route
+  path="/orders/:id"
+  element={<OrderDetailsPage />}
 />
       </Routes>
     </BrowserRouter>
